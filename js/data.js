@@ -575,7 +575,6 @@ const EVENTS = [
     cat: 'edu',
     side: 'right',
     month: { y: 2025, m: 10 },
-    ongoing: true,
     label:    { fr: 'Oct. 2025 → Juin 2026',        en: 'Oct 2025 → Jun 2026' },
     sublabel: { fr: 'PAIRSE — Exposciences 53',     en: 'PAIRSE — Exposciences 53' },
     projectId: 'pairse_expo'
