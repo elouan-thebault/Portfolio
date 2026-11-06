@@ -67,6 +67,59 @@ const PROJECTS = {
       tech: ['C/C++', 'ESP32', 'Arduino IDE', 'RFID RC522', 'SQLite / LittleFS', 'Embedded web server', 'HTML/CSS', 'Servo PWM', 'WiFi AP'],
     },
   },
+  infra_red: {
+    meta: {
+      cat: 'sys',
+      status: 'ongoing',
+      period: { start: { y: 2025, m: 3 }, end: null },
+    },
+
+    fr: {
+      catLabel: 'Systèmes & Réseaux',
+      title: 'Infrastructure self-hosted — Association RED',
+      date: 'Mars 2025 · Association RED — en cours',
+      context: 'Administrateur Systèmes & Réseaux · Association RED',
+
+      objective: 'Concevoir, déployer et administrer une infrastructure complète d’auto-hébergement pour l’association RED, de la virtualisation à la supervision.',
+
+      description: 'Je conçois et administre une infrastructure d’auto-hébergement couvrant la virtualisation, le stockage partagé, les services conteneurisés, le réseau et la supervision.',
+
+      features: [
+        'J’héberge plusieurs machines virtuelles (KVM, LXC) dans un cluster Proxmox VE.',
+        'Je fournis un stockage partagé sous TrueNAS, accessible en NFS et SMB.',
+        'J’administre plus de 10 services conteneurisés avec Docker et Portainer (Vaultwarden, Grafana, OnlyOffice, Nginx, etc.).',
+        'Je segmente le réseau par VLAN et configure un pare-feu pfSense ainsi qu’un reverse proxy Nginx avec certificats SSL/TLS.',
+        'Je supervise les services et l’infrastructure avec Grafana et automatise les mises à jour des conteneurs avec Watchtower.',
+      ],
+
+      skills: 'Administration systèmes et réseaux, virtualisation, sécurisation d’infrastructure, supervision et autonomie.',
+
+      tech: ['Proxmox VE', 'KVM', 'LXC', 'Docker', 'Portainer', 'TrueNAS', 'NFS / SMB', 'pfSense', 'VLAN', 'Nginx (reverse proxy)', 'SSL/TLS', 'Grafana', 'Watchtower', 'Vaultwarden', 'Linux', 'TCP/IP', 'DNS / DHCP'],
+    },
+
+    en: {
+      catLabel: 'Systems & Networking',
+      title: 'Self-hosted infrastructure — RED Association',
+      date: 'Mar 2025 · RED Association — ongoing',
+      context: 'Systems & Network Administrator · RED Association',
+
+      objective: 'Design, deploy and manage a complete self-hosted infrastructure for the RED association, from virtualization to monitoring.',
+
+      description: 'I design and manage a self-hosted infrastructure covering virtualization, shared storage, containerized services, networking and monitoring.',
+
+      features: [
+        'I host multiple virtual machines (KVM, LXC) on a Proxmox VE cluster.',
+        'I provide shared TrueNAS storage accessible over NFS and SMB.',
+        'I manage more than 10 containerized services with Docker and Portainer (Vaultwarden, Grafana, OnlyOffice, Nginx, etc.).',
+        'I segment the network with VLANs and configure a pfSense firewall and an Nginx reverse proxy with SSL/TLS certificates.',
+        'I monitor services and infrastructure with Grafana and automate container updates with Watchtower.',
+      ],
+
+      skills: 'Systems and network administration, virtualization, infrastructure security, monitoring and autonomy.',
+
+      tech: ['Proxmox VE', 'KVM', 'LXC', 'Docker', 'Portainer', 'TrueNAS', 'NFS / SMB', 'pfSense', 'VLAN', 'Nginx (reverse proxy)', 'SSL/TLS', 'Grafana', 'Watchtower', 'Vaultwarden', 'Linux', 'TCP/IP', 'DNS / DHCP'],
+    },
+  },
   discord: {
     meta: {
       cat: 'dev',
@@ -455,6 +508,16 @@ const PROJ_MILESTONES = {
     ]
   },
 
+  infra_red: {
+    cat: 'sys',
+    ongoing: true,
+    start: { y: 2025, m: 3 },
+    end: null,
+    steps: [
+      { y: 2025, m: 3, fr: 'Démarrage du projet d’infrastructure self-hosted', en: 'Self-hosted infrastructure project begins' },
+    ]
+  },
+
   discord: {
     cat: 'dev',
     ongoing: true,
@@ -605,6 +668,16 @@ const EVENTS = [
     label:    { fr: 'Juin 2025',                            en: 'Jun 2025' },
     sublabel: { fr: 'Jeu de combat 2D — IA & arbres décisionnels', en: '2D fighting game — AI & decision trees' },
     projectId: 'jeu_super_pixel_smash'
+  },
+  {
+    id: 'infra_red',
+    cat: 'sys',
+    side: 'left',
+    month: { y: 2025, m: 3 },
+    ongoing: true,
+    label:    { fr: 'Mars 2025 → en cours',       en: 'Mar 2025 → ongoing' },
+    sublabel: { fr: 'Infrastructure self-hosted — Association RED', en: 'Self-hosted infrastructure — RED Association' },
+    projectId: 'infra_red'
   },
   {
     id: 'jeu_space_invader',

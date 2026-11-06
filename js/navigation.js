@@ -10,6 +10,7 @@ function showPage(id) {
   document.getElementById('page-' + id).classList.add('active');
   currentPage = id;
   if (id === 'main') {
+    if (window._buildGraph) window._buildGraph();
     setTimeout(() => window.scrollTo(0, scrollPos), 0);
   } else {
     window.scrollTo(0, 0);

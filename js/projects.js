@@ -8,7 +8,7 @@ function renderProjects() {
   if (!grid) return;
   grid.innerHTML = '';
 
-  const order = ['rfid', 'discord', 'jeu_rok', 'pairse_mbot', 'pairse_expo'];
+  const order = ['infra_red', 'rfid', 'discord', 'jeu_rok', 'pairse_mbot', 'pairse_expo'];
   const t = T[lang];
 
   order.forEach((id, i) => {

@@ -27,7 +27,7 @@ function setLang(lang) {
     if (projId) openProject(projId);
   }
 
-  if (window._buildGraph) window._buildGraph();
+  if (window._buildGraph && currentPage === 'main') window._buildGraph();
 }
 
 /* ═══════════════════════════════════
